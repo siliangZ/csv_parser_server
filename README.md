@@ -52,5 +52,5 @@ There is a http client program that could be used to test the server. Right now,
 # TODO
 1. improve the log of server with log crate and env_logger crate
 2. support partial success. We could continue parse the csv if a error happens. It requires more understanding of the client.(They may not want that)
-3. improve error handling with clear message
-4. finish client_for_test
+3. improve error handling with clear message and better code
+4. finish client_for_test. Make the test more automatic
