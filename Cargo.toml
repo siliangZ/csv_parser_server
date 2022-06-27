@@ -1,0 +1,23 @@
+[package]
+name = "csv_parse_server"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "client_for_test"
+path = "./bin/client_for_test.rs"
+
+[dependencies]
+csv = "1.1"
+serde = { version = "1.0", features = ["derive"]}
+serde_json = "1.0"
+tokio = {version="1", features=["full"]}
+warp = "0.3"
+mobc = "0.7"
+mobc-postgres = "0.7"
+tokio-postgres = "0.7"
+snafu = "0.7"
+reqwest = {version = "0.11", features=["json"]}
+http = "0.2"
